@@ -3,7 +3,7 @@
 
 
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'host', 'has-has-error')} required  col-xs-6">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'host', 'has-has-error')} required  col-xs-12 col-lg-6">
 	<label for="host"> <g:message code="game.host.label"
 			default="Host" /> <span class="required-indicator">*</span>
 	</label>
@@ -20,7 +20,7 @@
 </div>
 
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'visitor', 'has-error')} required  col-xs-6">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'visitor', 'has-error')} required col-xs-12 col-lg-6">
 	<label for="visitor"> <g:message code="game.visitor.label"
 			default="Visitor" /> <span class="required-indicator">*</span>
 	</label>
@@ -37,7 +37,7 @@
 </div>
 
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'hostGoals', 'has-error')} required col-xs-6">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'hostGoals', 'has-error')} required col-xs-12 col-lg-6">
 	<label for="hostGoals"> <g:message code="game.hostGoals.label"
 			default="Host Goals" /> <span class="required-indicator">*</span>
 	</label>
@@ -46,7 +46,7 @@
 </div>
 
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'visitorGoals', 'has-error')} required col-xs-6">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'visitorGoals', 'has-error')} required col-xs-12 col-lg-6">
 	<label for="visitorGoals"> <g:message
 			code="game.visitorGoals.label" default="Visitor Goals" /> <span
 		class="required-indicator">*</span>
@@ -57,7 +57,7 @@
 
 <sec:ifAllGranted roles="ROLE_ADMIN">
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'date', 'has-error')} required">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'date', 'has-error')} required col-xs-12 col-lg-6">
 	<label for="date"> <g:message code="game.date.label"
 			default="Date" /> <span class="required-indicator">*</span>
 	</label>
@@ -69,7 +69,7 @@
 </div>
 
 <div
-	class="form-group ${hasErrors(bean: gameInstance, field: 'round', 'has-error')} required">
+	class="form-group ${hasErrors(bean: gameInstance, field: 'round', 'has-error')} required col-xs-12 col-lg-6">
 	<label for="round"> <g:message code="game.round.label"
 			default="Round" /> <span class="required-indicator">*</span>
 	</label>

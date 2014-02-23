@@ -17,7 +17,6 @@ class Bet {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return user.toString()+": "+ game.host+" "+hostGoals+" : " +visitorGoals+" "+ game.visitor;
 	}
 

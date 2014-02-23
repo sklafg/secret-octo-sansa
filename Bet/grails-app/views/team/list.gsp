@@ -12,6 +12,7 @@
 	<a href="#list-team" class="skip" tabindex="-1"><g:message
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="list-team" class="content scaffold-list" role="main">
+		<div class="col-xs-6 col-xs-offset-3">
 		<h1>
 			<g:message code="default.list.label" args="[entityName]" />
 			<sec:ifAllGranted roles="ROLE_ADMIN">
@@ -25,13 +26,14 @@
 				${flash.message}
 			</div>
 		</g:if>
-		<table class="col-xs-6 col-xs-offset-3">
+		
+		<table >
 			<thead>
 				<tr>
 					<g:sortableColumn property="name"
 						title="${message(code: 'team.name.label', default: 'Name')}" />
 					<g:sortableColumn property="code"
-						title="${message(code: 'team.code.label', default: 'C')}" />
+						title="${message(code: 'team.code.label', default: 'Code')}" />
 				</tr>
 			</thead>
 			<tbody>
@@ -51,7 +53,10 @@
 				</g:each>
 			</tbody>
 		</table>
-		
+		<div class="pagination">
+				<g:paginate total="${teamInstanceTotal}" />
+			</div>
+		</div>
 	</div>
 </body>
 </html>
